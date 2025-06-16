@@ -21,6 +21,10 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'MediSoft2025'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://sql10784948:J3fCCxNds9@sql10.freesqldatabase.com:3306/sql10784948'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
+    "pool_pre_ping": True,
+    "pool_recycle": 280,
+}
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
