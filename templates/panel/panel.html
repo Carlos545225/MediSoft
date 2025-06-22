@@ -3,7 +3,7 @@
 <main class="container-fluid mt-4 flex-grow-1">
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4">
         <h1 class="h3 fw-bold text-secondary">Resumen Diario</h1>
-        <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-toolbar mb-2 mb-md-0 d-none d-md-flex">
             <a href="{{ url_for('cita') }}" type="button" class="btn btn-sm btn-primary me-1" onclick="window.location.href='citas.html?action=new'"><i class="fas fa-calendar-plus me-1"></i> Nueva Cita</a>
             <a href="{{ url_for('pacientes') }}" type="button" class="btn btn-sm btn-outline-primary me-1" onclick="window.location.href='pacientes.html?action=new'"><i class="fas fa-user-plus me-1"></i> Nuevo Paciente</a>
             <a href="{{ url_for('medico') }}" type="button" class="btn btn-sm btn-primary me-1" onclick="window.location.href='medicos.html?action=new'"><i class="fas fa-user-md fa-fw me-1"></i> Nuevo Medico</a>
