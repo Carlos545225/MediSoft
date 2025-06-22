@@ -19,7 +19,7 @@ matplotlib.use('Agg')
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'MediSoft2025'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://sql10784948:J3fCCxNds9@sql10.freesqldatabase.com:3306/sql10784948'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://sql10786284:QxsxyCAA5J@sql10.freesqldatabase.com:3306/sql10786284'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
     "pool_pre_ping": True,
